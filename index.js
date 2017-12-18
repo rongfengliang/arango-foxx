@@ -8,3 +8,5 @@ router.get('/hello-world', function (req, res) {
 .response(['text/plain'], 'A generic greeting.')
 .summary('Generic greeting')
 .description('Prints a generic greeting.');
+
+module.context.use(router);
